@@ -1,0 +1,39 @@
+def get_input():
+    return input("Enter a sentence or paragraph: ").strip()
+def count_words(input_string):
+    if not input_string:
+        return 0
+    words = input_string.split()
+    return len(words)
+def main():
+    input_string = get_input()
+    word_count = count_words(input_string)
+    print(f"Word count: {word_count}")
+
+if __name__ == "__main__":
+    main()
+def count_words(input_string):
+    if not input_string.strip():  # Check if input is empty or just whitespace
+        return 0
+    words = input_string.split()
+    return len(words)
+# Function to get user input
+def get_input():
+    return input("Enter a sentence or paragraph: ").strip()
+
+# Function to count words in the input string
+def count_words(input_string):
+    if not input_string.strip():  # Check if input is empty or just whitespace
+        return 0
+    words = input_string.split()
+    return len(words)
+
+# Main function to run the program
+def main():
+    input_string = get_input()  # Get user input
+    word_count = count_words(input_string)  # Count words in input
+    print(f"Word count: {word_count}")  # Output word count
+
+# Execute the main function if this script is run directly
+if __name__ == "__main__":
+    main()
